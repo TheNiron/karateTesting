@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: features.AllRunner
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 4.071 sec <<< FAILURE!
+[3:41] methodIs(\'post\') && pathMatches(\'\/rentacycles\/rent\')([products-mock])  Time elapsed: 0.029 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: products-mock.feature:42 - javascript evaluation failed: request, ReferenceError: "request" is not defined in <eval> at line number 1
+	at ✽.* def requestBody = request (products-mock.feature:42)
+[4:61] methodIs(\'post\') && pathMatches(\'\/rentacycles\/return\')([products-mock])  Time elapsed: 0.006 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: products-mock.feature:62 - javascript evaluation failed: request, ReferenceError: "request" is not defined in <eval> at line number 1
+	at ✽.* def requestBody = request (products-mock.feature:62)
+[1:7] Get all rentacycles([products])  Time elapsed: 0.869 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: products.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method get (products.feature:10)
+[2:14] Rent \/ Return the cycle([products])  Time elapsed: 0.034 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: products.feature:19 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method get (products.feature:19)
+[1:9] Basic Authorization([authorization])  Time elapsed: 0.121 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: authorization.feature:14 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method post (authorization.feature:14)
+[2:18] Oauth2 Authorization([authorization])  Time elapsed: 0.024 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: authorization.feature:23 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method post (authorization.feature:23)
+[3:55] Fuzzy Matching 2([assert])  Time elapsed: 0.009 sec  <<< ERROR!
+com.intuit.karate.exception.KarateException: assert.feature:79 - path: $.foo, actual: 'test123', expected: '#regex [a-z0-9] {7}', reason: regex match failed
+	at ✽.* match test == {foo: '#regex [a-z0-9] {7}'} (assert.feature:79)

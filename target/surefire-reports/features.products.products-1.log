@@ -1,0 +1,11 @@
+12:44:55.124 not a js function or feature file: read('classpath:karate-config.js') - [type: NULL, value: null]
+12:44:55.957 request:
+1 > GET http://localhost:8089/rentacycles
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8089
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+12:44:55.992 org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused), http call failed after 33 milliseconds for URL: http://localhost:8089/rentacycles
+12:44:55.992 http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="12" failures="0" name="features.AllRunner" time="4.071" errors="7" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="AllRunner"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/engineer/git/framework/api-testing"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-148-generic"/>
+    <property name="user.home" value="/home/engineer"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="engineer"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/home/engineer/dev-softwares/jdk1.8.0_211/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=AllRunner"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/resources.jar:/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/rt.jar:/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/sunrsasign.jar:/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/jsse.jar:/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/jce.jar:/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/charsets.jar:/home/engineer/dev-softwares/jdk1.8.0_211/jre/lib/jfr.jar:/home/engineer/dev-softwares/jdk1.8.0_211/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="[1:24] methodIs(\&apos;get\&apos;) &amp;&amp; pathMatches(\&apos;\/rentacycles\&apos;) &amp;&amp; paramValue(\&apos;available\&apos;) == \&apos;true\&apos;([products-mock])" name="[1:24] methodIs" time="0.219"/>
+  <testcase classname="[2:33] methodIs(\&apos;get\&apos;) &amp;&amp; pathMatches(\&apos;\/rentacycles\&apos;)([products-mock])" name="[2:33] methodIs" time="0.002"/>
+  <testcase classname="[3:41] methodIs(\&apos;post\&apos;) &amp;&amp; pathMatches(\&apos;\/rentacycles\/rent\&apos;)([products-mock])" name="[3:41] methodIs" time="0.029">
+    <error message="products-mock.feature:42 - javascript evaluation failed: request, ReferenceError: &quot;request&quot; is not defined in &lt;eval&gt; at line number 1" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: products-mock.feature:42 - javascript evaluation failed: request, ReferenceError: &quot;request&quot; is not defined in &lt;eval&gt; at line number 1
+	at ✽.* def requestBody = request (products-mock.feature:42)
+</error>
+    <system-out>12:44:54.763 [main] WARN  com.intuit.karate - not a js function or feature file: read(&apos;classpath:karate-config.js&apos;) - [type: NULL, value: null]
+</system-out>
+  </testcase>
+  <testcase classname="[4:61] methodIs(\&apos;post\&apos;) &amp;&amp; pathMatches(\&apos;\/rentacycles\/return\&apos;)([products-mock])" name="[4:61] methodIs" time="0.006">
+    <error message="products-mock.feature:62 - javascript evaluation failed: request, ReferenceError: &quot;request&quot; is not defined in &lt;eval&gt; at line number 1" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: products-mock.feature:62 - javascript evaluation failed: request, ReferenceError: &quot;request&quot; is not defined in &lt;eval&gt; at line number 1
+	at ✽.* def requestBody = request (products-mock.feature:62)
+</error>
+    <system-out>12:44:54.811 [main] WARN  com.intuit.karate - not a js function or feature file: read(&apos;classpath:karate-config.js&apos;) - [type: NULL, value: null]
+</system-out>
+  </testcase>
+  <testcase classname="[products-mock]" name="[5:76] " time="0.006"/>
+  <testcase classname="[products]" name="[1:7] Get all rentacycles" time="0.869">
+    <error message="products.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: products.feature:10 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method get (products.feature:10)
+</error>
+    <system-out>---------------------------------------------------------
+feature: classpath:features/products/products-mock.feature
+scenarios:  5 | passed:  3 | failed:  2 | time: 0.2159
+---------------------------------------------------------
+HTML report: (paste into browser to view) | Karate version: 0.9.4
+file:/home/engineer/git/framework/api-testing/target/surefire-reports/features.products.products-mock.html
+---------------------------------------------------------
+
+12:44:55.123 [main] WARN  com.intuit.karate - not a js function or feature file: read(&apos;classpath:karate-config.js&apos;) - [type: NULL, value: null]
+12:44:55.956 [main] DEBUG com.intuit.karate - request:
+1 &gt; GET http://localhost:8089/rentacycles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8089
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+12:44:55.991 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused), http call failed after 33 milliseconds for URL: http://localhost:8089/rentacycles
+12:44:55.992 [main] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+</system-out>
+  </testcase>
+  <testcase classname="[products]" name="[2:14] Rent \/ Return the cycle" time="0.034">
+    <error message="products.feature:19 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: products.feature:19 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method get (products.feature:19)
+</error>
+    <system-out>12:44:56.019 [main] WARN  com.intuit.karate - not a js function or feature file: read(&apos;classpath:karate-config.js&apos;) - [type: NULL, value: null]
+12:44:56.037 [main] DEBUG com.intuit.karate - request:
+1 &gt; GET http://localhost:8089/rentacycles?available=true
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:8089
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+12:44:56.040 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused), http call failed after 1 milliseconds for URL: http://localhost:8089/rentacycles?available=true
+12:44:56.054 [main] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8089 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+</system-out>
+  </testcase>
+  <testcase classname="[authorization]" name="[1:9] Basic Authorization" time="0.121">
+    <error message="authorization.feature:14 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: authorization.feature:14 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method post (authorization.feature:14)
+</error>
+    <system-out>---------------------------------------------------------
+feature: classpath:features/products/products.feature
+scenarios:  2 | passed:  0 | failed:  2 | time: 0.8984
+---------------------------------------------------------
+HTML report: (paste into browser to view) | Karate version: 0.9.4
+file:/home/engineer/git/framework/api-testing/target/surefire-reports/features.products.products.html
+---------------------------------------------------------
+
+12:44:56.167 [main] WARN  com.intuit.karate - not a js function or feature file: read(&apos;classpath:karate-config.js&apos;) - [type: NULL, value: null]
+12:44:56.285 [main] DEBUG com.intuit.karate - request:
+1 &gt; POST http://localhost:8247/Postemployeedata
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Basic TGFrc2hhbmk6UGFzc3dvcmRAMTIz
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 36
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: localhost:8247
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+1 &gt; department: &quot;valid_department&quot;
+{&quot;message&quot;:&quot;This is test JSON Body&quot;}
+
+12:44:56.288 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused), http call failed after 2 milliseconds for URL: http://localhost:8247/Postemployeedata
+12:44:56.288 [main] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+</system-out>
+  </testcase>
+  <testcase classname="[authorization]" name="[2:18] Oauth2 Authorization" time="0.024">
+    <error message="authorization.feature:23 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: authorization.feature:23 - 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+	at ✽.When method post (authorization.feature:23)
+</error>
+    <system-out>12:44:56.300 [main] WARN  com.intuit.karate - not a js function or feature file: read(&apos;classpath:karate-config.js&apos;) - [type: NULL, value: null]
+12:44:56.318 [main] DEBUG com.intuit.karate - request:
+1 &gt; POST http://localhost:8247/tokengen?client_id=clientID123&amp;client_secret=clientSecret123
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 0
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Host: localhost:8247
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+
+
+12:44:56.320 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused), http call failed after 1 milliseconds for URL: http://localhost:8247/tokengen?client_id=clientID123&amp;client_secret=clientSecret123
+12:44:56.321 [main] ERROR com.intuit.karate - http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
+</system-out>
+  </testcase>
+  <testcase classname="[assert]" name="[1:6] Basic Matching" time="0.006"/>
+  <testcase classname="[assert]" name="[2:19] Fuzzy Matching 1" time="0.02"/>
+  <testcase classname="[assert]" name="[3:55] Fuzzy Matching 2" time="0.009">
+    <error message="assert.feature:79 - path: $.foo, actual: &apos;test123&apos;, expected: &apos;#regex [a-z0-9] {7}&apos;, reason: regex match failed" type="com.intuit.karate.exception.KarateException">com.intuit.karate.exception.KarateException: assert.feature:79 - path: $.foo, actual: &apos;test123&apos;, expected: &apos;#regex [a-z0-9] {7}&apos;, reason: regex match failed
+	at ✽.* match test == {foo: &apos;#regex [a-z0-9] {7}&apos;} (assert.feature:79)
+</error>
+    <system-out>12:44:56.479 [main] WARN  com.intuit.karate - not a js function or feature file: read(&apos;classpath:karate-config.js&apos;) - [type: NULL, value: null]
+12:44:56.501 [main] ERROR com.intuit.karate - assertion failed: path: $.foo, actual: &apos;test123&apos;, expected: &apos;#regex [a-z0-9] {7}&apos;, reason: regex match failed
+</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,4 @@
+/home/engineer/git/framework/api-testing/src/test/java/features/APITest.java
+/home/engineer/git/framework/api-testing/src/test/java/utils/Wiremock.java
+/home/engineer/git/framework/api-testing/src/test/java/features/products/mockServerStart.java
+/home/engineer/git/framework/api-testing/src/test/java/features/products/productsRunner.java

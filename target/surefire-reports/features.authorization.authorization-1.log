@@ -1,0 +1,16 @@
+12:44:56.168 not a js function or feature file: read('classpath:karate-config.js') - [type: NULL, value: null]
+12:44:56.286 request:
+1 > POST http://localhost:8247/Postemployeedata
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Basic TGFrc2hhbmk6UGFzc3dvcmRAMTIz
+1 > Connection: Keep-Alive
+1 > Content-Length: 36
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:8247
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_211)
+1 > department: "valid_department"
+{"message":"This is test JSON Body"}
+
+12:44:56.288 org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused), http call failed after 2 milliseconds for URL: http://localhost:8247/Postemployeedata
+12:44:56.289 http request failed: 
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8247 [localhost/127.0.0.1] failed: Connection refused (Connection refused)
