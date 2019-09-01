@@ -1,3 +1,4 @@
+@ignore
 Feature: Rent-a-cycle API service mock
      This file is a mocked version of the API being called.
      Using Karate's Standalone JAR, you can start it as a standalone process with the following command:

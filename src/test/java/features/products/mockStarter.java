@@ -1,27 +1,24 @@
 package features.products;
 
 import com.intuit.karate.FileUtils;
-import com.intuit.karate.KarateOptions;
-import com.intuit.karate.junit4.Karate;
 import com.intuit.karate.netty.FeatureServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
 
 import java.io.File;
 
-@RunWith(Karate.class )
-@KarateOptions(tags = "~@ignore")
-public class productsRunner {
+
+public class mockStarter {
     private static FeatureServer server;
 
     @BeforeClass
     public static void beforeClass() {
-         System.setProperty("karate.env", "mock");
-        File file = FileUtils.getFileRelativeTo(productsRunner.class, "products-mock.feature");
-        server = FeatureServer.start(file, 8089, false, null );
+        String queueName = "DEMO.MOCK";
+        File file = FileUtils.getFileRelativeTo(mockStarter.class, "products-mock.feature");
+        server = FeatureServer.start(file, 0, false, null );
         String paymentServiceUrl = "http://localhost:" + server.getPort();
     }
+
 
     @AfterClass
     public static void afterClass() {

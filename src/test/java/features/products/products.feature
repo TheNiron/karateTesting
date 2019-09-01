@@ -3,7 +3,6 @@ Feature:  Karate test Double API tested with basic karate steps
 # KARATE Double is used to mock the expected API behavior and responses
 # -----------------------------------------------
   Background:
-    * def port = karate.env == 'mock' ? karate.start('products-mock.feature').port : 8089
     * url 'http://localhost:8089'
 
   Scenario: Get all rentacycles
