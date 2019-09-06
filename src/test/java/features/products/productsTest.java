@@ -11,16 +11,15 @@ import org.junit.runner.RunWith;
 import java.io.File;
 
 @RunWith(Karate.class )
-@KarateOptions(tags = "~@ignore")
-public class productsRunner {
+@KarateOptions(tags = "~@mock",features = "classpath:features/products/products.feature")
+public class productsTest {
     private static FeatureServer server;
 
     @BeforeClass
     public static void beforeClass() {
          System.setProperty("karate.env", "mock");
-        File file = FileUtils.getFileRelativeTo(productsRunner.class, "products-mock.feature");
+        File file = FileUtils.getFileRelativeTo(productsTest.class, "products-mock.feature");
         server = FeatureServer.start(file, 8089, false, null );
-        String paymentServiceUrl = "http://localhost:" + server.getPort();
     }
 
     @AfterClass

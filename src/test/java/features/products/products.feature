@@ -1,3 +1,4 @@
+@ignore
 Feature:  Karate test Double API tested with basic karate steps
 # -----------------------------------------------
 # KARATE Double is used to mock the expected API behavior and responses

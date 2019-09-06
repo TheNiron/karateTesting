@@ -1,0 +1,1 @@
+INSERT INTO sample_db.vehicles (vehicle_id, availability, type) VALUES (1, 'true', 'motor-bike'),(2, 'false', 'bicycle'),(3, 'true', 'motor-bike');

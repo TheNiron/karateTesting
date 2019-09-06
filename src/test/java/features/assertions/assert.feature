@@ -76,7 +76,7 @@ Feature: Sample on how to use Assert
 
 # regex
     * def test = {foo: 'test123'}
-    * match test == {foo: '#regex [a-z0-9] {7}'}
+    * match test == {foo: '#regex [a-z0-9]{7}'}
 
 # uuid
     * def test = {id: 'a9f7a56b-8d5c-455c-9d13-808461d17b91'}
