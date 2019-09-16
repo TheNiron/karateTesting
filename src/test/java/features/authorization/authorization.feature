@@ -1,4 +1,3 @@
-@ignore
 Feature: Sample on how to use Authorizations
 # -----------------------------------------------
 # Wiremocks are being used to mock the APIs used

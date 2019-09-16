@@ -6,6 +6,5 @@ import org.junit.runner.RunWith;
 @RunWith(Karate.class)
 public class dbRunner {
 
-
     public static void beforeClass() {
     }}

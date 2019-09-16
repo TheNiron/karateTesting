@@ -15,7 +15,7 @@ Feature: Database testing
     * configure afterScenario = function(){ karate.call('after-feature.feature'); }
 
   Scenario: Validate Database assertion
-
+    * print someUrlBase
    # since the DbUtils returns a Java Map, it becomes a JSON, which means that you can use Karate's 'match' syntax
     * def vehicles = db.readRows('SELECT * FROM vehicles')
 

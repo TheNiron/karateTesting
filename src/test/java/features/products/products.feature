@@ -1,10 +1,14 @@
-@ignore
 Feature:  Karate test Double API tested with basic karate steps
 # -----------------------------------------------
 # KARATE Double is used to mock the expected API behavior and responses
 # -----------------------------------------------
   Background:
     * url 'http://localhost:8089'
+
+    * def mock = Java.type('features.products.mockServer')
+    * def mockConfigs = mock.start()
+
+    * configure afterScenario = function(){ karate.call('after-scenario.feature'); }
 
   Scenario: Get all rentacycles
 
