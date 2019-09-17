@@ -19,7 +19,7 @@ import java.util.List;
 import static junit.framework.TestCase.assertTrue;
 
 @KarateOptions(tags = {"~@ignore"}) // important: do not use @RunWith(Karate.class) !
-public class bulkRunner {
+public class bulkTest {
     static WireMockHook wiremock = new WireMockHook();
 
     @BeforeClass
@@ -32,7 +32,7 @@ public class bulkRunner {
     public void testParallel() {
         System.setProperty("mock.env", "karateTesting"); // ensure reset if other tests (e.g. mock) had set env in CI
         Results results = Runner.parallel(getClass(), 1);
-        bulkRunner.generateReport(results.getReportDir());
+        bulkTest.generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(), results.getFailCount() == 0);
     }
 
